@@ -1,0 +1,466 @@
+query_id,query,label_it,label_bus
+b62e6645,We need one version of truth for company KPIs,data_warehouse,reporting_foundation
+269019b4,"We need to detect fraudulent credit card transactions the moment they are submitted, before authorization is approved.",stream_processing,real_time_processing
+7d085be7,Our trading platform must process market price updates and trigger buy/sell alerts within milliseconds.,stream_processing,real_time_processing
+2c87904f,We want to monitor ATM activity across the country in real time and alert security if unusual patterns emerge.,stream_processing,real_time_processing
+385194d4,Customer clicks on our website need to be analyzed instantly to personalize the homepage before it loads.,stream_processing,real_time_processing
+46c56e0b,IoT sensors on factory machines send readings every second and we need to trigger maintenance alerts immediately.,stream_processing,real_time_processing
+f3ca45eb,We receive thousands of payment events per second and need a live dashboard showing transaction volume.,stream_processing,real_time_processing
+8dd239f4,Our logistics system needs to update delivery status the moment a parcel is scanned at any depot.,stream_processing,real_time_processing
+1dd0d4e2,We want to send a push notification to a customer within seconds of their card being declined.,stream_processing,real_time_processing
+78d88574,Live sports betting odds must update instantly based on game events as they happen.,stream_processing,real_time_processing
+e44f2d7d,Patient vital signs from hospital monitors need to be streamed to doctors in real time.,stream_processing,real_time_processing
+cea176c5,We need to aggregate social media mentions of our brand as they are posted and surface trending topics.,stream_processing,real_time_processing
+e26ab5ca,Our ride-hailing app must match drivers to passengers in under two seconds.,stream_processing,real_time_processing
+4f493b4d,Energy consumption meters send readings every minute and we want real-time anomaly detection.,stream_processing,real_time_processing
+f31c2481,We need to capture every mouse movement and interaction on our trading UI for real-time compliance monitoring.,stream_processing,real_time_processing
+16466049,Our call center needs a live feed of ongoing complaints to display on a manager dashboard.,stream_processing,real_time_processing
+35546e5e,"Every night we extract customer records from our CRM, transform them, and load them into the data warehouse.",etl_pipeline,data_consolidation
+f0b5706d,We need to consolidate sales data from 12 regional offices into one central report every Monday morning.,etl_pipeline,data_consolidation
+cd57bc88,Our payroll system needs to pull employee hours from three different HR tools and calculate salaries each month.,etl_pipeline,data_consolidation
+d1ba51e9,We receive flat files from partner banks every evening and need to load them into our reconciliation system.,etl_pipeline,data_consolidation
+60fadf47,"Our regulatory reporting requires combining transaction data, customer data, and product data into a weekly submission file.",etl_pipeline,data_consolidation
+d50eb909,We need to migrate five years of historical loan data from a legacy system into our new core banking platform.,etl_pipeline,data_consolidation
+e9aee500,Product inventory levels from our warehouse system need to sync with our e-commerce platform every two hours.,etl_pipeline,data_consolidation
+871c9f65,"We process insurance claims overnight by joining policy data, customer data, and claims submissions.",etl_pipeline,data_consolidation
+6fbd8168,Our marketing team needs a weekly extract of customer purchase history to feed into campaign targeting tools.,etl_pipeline,data_consolidation
+a8a91423,We need to aggregate all server logs from the past 24 hours and load summarized metrics into our monitoring database.,etl_pipeline,data_consolidation
+c983a4ed,Student exam results from multiple schools need to be collected and standardized into a national database each term.,etl_pipeline,data_consolidation
+6a32c414,We pull financial statements from all subsidiaries monthly and consolidate them for group reporting.,etl_pipeline,data_consolidation
+635225e4,Our data science team needs a nightly refresh of features computed from raw transaction data.,etl_pipeline,data_consolidation
+de9c8ab7,We receive XML files from government systems weekly and need to parse and load them into our database.,etl_pipeline,data_consolidation
+80229723,Healthcare providers send us patient discharge summaries in CSV format daily for billing reconciliation.,etl_pipeline,data_consolidation
+6d22e789,Our finance team needs a single source of truth for revenue figures that all departments agree on.,data_warehouse,reporting_foundation
+d77c6442,"Executives need a unified dashboard showing KPIs across sales, operations, and customer service with consistent definitions.",data_warehouse,reporting_foundation
+9d4f93ad,We want analysts to be able to run complex queries across five years of transaction history without slowing down production systems.,data_warehouse,reporting_foundation
+2c7803e9,Our BI team needs a central repository where all business metrics are pre-calculated and ready for reporting.,data_warehouse,reporting_foundation
+a3bc9a74,Different departments calculate customer lifetime value differently and we need one agreed definition stored centrally.,data_warehouse,reporting_foundation
+7f3f9770,We need historical trend analysis across product lines going back ten years for strategic planning.,data_warehouse,reporting_foundation
+70dc1f2a,"Our compliance team needs a structured store of all customer interactions queryable by date, channel, and product.",data_warehouse,reporting_foundation
+63f97955,"Marketing needs to slice customer behaviour data by demographics, geography, and purchase category for campaign planning.",data_warehouse,reporting_foundation
+323faae7,"We want self-service analytics so any business user can query clean, trusted data without asking IT.",data_warehouse,reporting_foundation
+25ae4b4a,"Our board needs monthly financial reports that combine data from accounting, operations, and HR in one place.",data_warehouse,reporting_foundation
+bf5d2b3c,We need a central store of student performance data so school administrators can compare results across years.,data_warehouse,reporting_foundation
+9b34c2ae,"Our procurement team needs spend analytics across all suppliers, categories, and cost centres going back three years.",data_warehouse,reporting_foundation
+7aaced92,We want to track claim settlement rates over time and compare them across insurance product lines.,data_warehouse,reporting_foundation
+38f5f539,"Our HR department needs headcount, attrition, and salary data consolidated from four regional HR systems.",data_warehouse,reporting_foundation
+8b0ebc4e,"We need structured storage of all energy consumption data by site, meter, and time period for regulatory reporting.",data_warehouse,reporting_foundation
+81b12001,"We want to store all raw clickstream logs, transaction files, and emails so we can build ML models later.",data_lake,raw_data_storage
+fd48df58,Our security team needs to archive all network traffic logs indefinitely for forensic investigation purposes.,data_lake,raw_data_storage
+a741e143,"We receive unstructured data from social media, PDFs, images, and audio files and want one place to store it all cheaply.",data_lake,raw_data_storage
+fd861eb0,"Our data science team wants access to raw, unprocessed customer data in its original form for exploratory analysis.",data_lake,raw_data_storage
+1b8b9aa5,We generate terabytes of sensor data from vehicles daily and need cheap long-term storage before we know how to use it.,data_lake,raw_data_storage
+5a13fed6,"Medical imaging files, doctor notes, and lab results need to be stored in one place for future AI research.",data_lake,raw_data_storage
+198c28b5,We want to land all data from every source system in raw format before we decide how to transform it.,data_lake,raw_data_storage
+d6244f57,Our research team needs years of satellite imagery stored accessibly for climate modelling experiments.,data_lake,raw_data_storage
+f3735ba3,We archive all customer call recordings and chat transcripts for potential future analysis and compliance.,data_lake,raw_data_storage
+7198bac6,"Our legal team requires all contracts, emails, and documents to be stored in original format for e-discovery.",data_lake,raw_data_storage
+c06f9ca3,We collect millions of rows of raw telemetry from our mobile app and want to store it all before filtering.,data_lake,raw_data_storage
+d44068fd,Game event logs from millions of players need to be stored cheaply for future game design analytics.,data_lake,raw_data_storage
+3b66ddf8,We want a single landing zone for data from all our acquisitions before we integrate them properly.,data_lake,raw_data_storage
+fb8ad915,"Our journalism team needs a searchable archive of every article, image, and video ever published.",data_lake,raw_data_storage
+92897b33,We receive government open data in many formats and want to store it all for public policy research.,data_lake,raw_data_storage
+f363fc63,Our mobile banking app needs to show the customer's real-time balance from the core banking system.,api_integration,system_connectivity
+39cee168,We want to connect our CRM to our email marketing tool so customer segments sync automatically.,api_integration,system_connectivity
+a95033bb,"Our checkout system needs to call a payment gateway, a fraud check service, and a loyalty system simultaneously.",api_integration,system_connectivity
+2af5d757,Partners should be able to show our product information automatically without our teams sending updates manually.,api_integration,system_connectivity
+9d4f2acd,Our ERP system needs to send purchase orders to supplier systems automatically when stock drops below threshold.,api_integration,system_connectivity
+634ffd63,We want third-party fintech apps to access customer account data securely through open banking standards.,api_integration,system_connectivity
+f1a6ae02,Our HR system needs to automatically provision accounts in IT systems when a new employee is hired.,api_integration,system_connectivity
+78ed8d93,We need to integrate our ticketing system with Slack so support agents get notified instantly of new issues.,api_integration,system_connectivity
+52566c7d,Our insurance platform needs to pull vehicle data from government registries to validate claims automatically.,api_integration,system_connectivity
+8fe7b067,We want to embed a credit score check from a bureau directly into our loan application workflow.,api_integration,system_connectivity
+e1373f32,Our accounting software needs to receive invoices from supplier portals automatically without manual entry.,api_integration,system_connectivity
+2788a6d6,We need to connect our hospital information system to national health registry for automatic patient verification.,api_integration,system_connectivity
+9507d9da,Customers should see live delivery options and prices at checkout without staff updating them manually.,api_integration,system_connectivity
+83a5d0aa,We want to push transaction data to our analytics platform the moment a payment is processed.,stream_processing,real_time_processing
+2201f635,Our compliance system needs to call a sanctions screening service for every new customer during onboarding.,api_integration,system_connectivity
+de240e03,Our fraud model and credit scoring model both need customer spend history but each team computes it differently.,ml_feature_store,ai_data_preparation
+21e1ddcf,We have ten ML models in production and each one recomputes the same customer features from scratch.,ml_feature_store,ai_data_preparation
+688f3a28,"Features computed in training are calculated differently at inference time, causing model performance to degrade.",ml_feature_store,ai_data_preparation
+f92ad139,We want to reuse engineered features across multiple recommendation models without duplicating computation.,ml_feature_store,ai_data_preparation
+c6e570e3,"Our data scientists need access to pre-computed, validated features without waiting for engineering to build pipelines.",ml_feature_store,ai_data_preparation
+57412f0c,We need point-in-time correct features for model training to avoid data leakage from the future.,ml_feature_store,ai_data_preparation
+b7f29c75,Marketing and risk teams both need customer engagement scores but currently calculate them in different ways.,ml_feature_store,ai_data_preparation
+bfcb5020,We want to version our features so we can reproduce model training results from six months ago exactly.,ml_feature_store,ai_data_preparation
+9954309f,Our churn model needs 200 features and refreshing them all nightly is slowing down our pipelines significantly.,ml_feature_store,ai_data_preparation
+dc87f0a6,We want a catalogue of all available ML features so teams can discover and reuse them across projects.,ml_feature_store,ai_data_preparation
+4db447f8,Our product recommendation engine needs user behaviour features available in under 10ms at serving time.,ml_feature_store,ai_data_preparation
+e8089a4b,We need to ensure that the same feature definitions are used consistently across training and production environments.,ml_feature_store,ai_data_preparation
+7afa442f,Different squads keep rebuilding the same customer lifetime value feature independently wasting engineering time.,ml_feature_store,ai_data_preparation
+e1dbd749,Our risk models need historical feature snapshots going back two years for backtesting purposes.,ml_feature_store,ai_data_preparation
+c7d1d974,We want to monitor feature drift in production and alert when a feature distribution changes significantly.,stream_processing,real_time_processing
+63ca1e54,Every morning 500 analysts run the same executive dashboard and the database slows to a crawl.,data_caching,performance_optimization
+ff7be4d9,Our product pages load slowly because every visit triggers a fresh database query for prices and stock.,data_caching,performance_optimization
+6bb538e7,We want to store session tokens and user preferences so login is fast without hitting the database each time.,data_caching,performance_optimization
+c79aa410,Our risk calculation engine runs the same Monte Carlo simulations repeatedly with the same inputs.,data_caching,performance_optimization
+3e0886ea,Our API is getting hammered by repeated requests for the same reference data that almost never changes.,data_caching,performance_optimization
+8c90ee8d,Leaderboard rankings in our game are queried millions of times per hour but only update every five minutes.,data_caching,performance_optimization
+26d4e072,We want to pre-compute and cache personalised product recommendations so the homepage loads instantly.,data_caching,performance_optimization
+c8d5bbcd,Our search autocomplete is slow because it queries the full product index on every keystroke.,data_caching,performance_optimization
+3ac8e7e1,Exchange rates and currency conversion data are queried thousands of times per minute but only change hourly.,data_caching,performance_optimization
+f4c6cc9f,We want to materialise complex aggregation queries so reports open in seconds instead of minutes.,data_caching,performance_optimization
+ea128ac6,Our mobile app makes repeated API calls for the same static configuration data on every screen load.,data_caching,performance_optimization
+3d4a7e58,Frequently accessed customer profile data should be cached in memory to reduce latency for the service desk.,data_caching,performance_optimization
+2c73ffa4,We need to cache the results of regulatory calculation runs so auditors can retrieve them instantly.,data_caching,performance_optimization
+6dedd4d8,Our map application recalculates the same popular routes repeatedly instead of storing precomputed results.,data_caching,performance_optimization
+a3d1e9ad,We want to cache aggregated sales metrics so the BI tool does not hit the warehouse on every page refresh.,data_caching,performance_optimization
+a0dc79fd,Our relationship managers open the same customer 360 dashboard hundreds of times a day and the database cannot keep up.,data_caching,performance_optimization
+df557508,Branch staff need instant access to product rates and terms but every lookup is hitting the core banking system.,data_caching,performance_optimization
+4d90f4e2,Our mobile banking app fetches the same account summary on every login which is causing unnecessary load on backend systems.,data_caching,performance_optimization
+68c80bd7,Regulatory reference data like country codes and product classifications never change but are queried millions of times daily.,data_caching,performance_optimization
+fba79509,Our fraud scoring API needs customer profile features available in under five milliseconds but the database query takes two seconds.,ml_feature_store,ai_data_preparation
+75aae5c1,The same stress test results are retrieved repeatedly by different teams but each request reruns the full calculation.,data_caching,performance_optimization
+1ed289c2,Our internet banking portal recalculates available credit limit on every page load instead of storing the result.,data_caching,performance_optimization
+d117113b,Exchange rate lookups for currency conversion are hitting our FX system thousands of times per minute with the same requests.,data_caching,performance_optimization
+244553a8,Our probability of default model and our early warning system both need customer financial ratio features but compute them inconsistently.,ml_feature_store,ai_data_preparation
+dfc6b0b9,We want to reuse behavioural features computed for fraud detection in our next best offer recommendation engine.,ml_feature_store,ai_data_preparation
+a1854afe,Our credit scoring model uses different definitions of customer tenure than our churn model causing inconsistent decisions.,ml_feature_store,ai_data_preparation
+b7a20021,We need features calculated at the exact point in time a loan was approved so we can fairly backtest our models.,ml_feature_store,ai_data_preparation
+dca01b36,Our AML transaction monitoring model needs hundreds of aggregated features available within milliseconds at inference time.,ml_feature_store,ai_data_preparation
+c466549b,Different data science teams keep rebuilding the same customer risk indicators independently wasting months of effort.,ml_feature_store,ai_data_preparation
+c2542329,We want to detect when input features to our credit model start drifting so we can retrain before performance degrades.,ml_feature_store,ai_data_preparation
+95d6a5b9,Our regulatory stress testing models need point in time snapshots of customer exposure features for each historical scenario.,ml_feature_store,ai_data_preparation
+d7755855,"Our loan origination system needs to call the credit bureau, land registry and fraud blacklist simultaneously during application.",api_integration,system_connectivity
+fd7846a7,We want to offer open banking so approved third party apps can access customer account data securely.,api_integration,system_connectivity
+6f47d498,Trade documents should be checked automatically against external authorities so staff do not have to do it by hand.,api_integration,system_connectivity
+8c075ad0,We need to integrate with SWIFT gpi so customers can track their international payments in real time.,api_integration,system_connectivity
+c3e35f85,"Our digital onboarding flow needs to call identity verification, sanctions screening and PEP check services in sequence.",api_integration,system_connectivity
+35291fb2,We want to push debit and credit notifications to customers through their preferred channels the moment transactions post.,stream_processing,real_time_processing
+62f5533a,Our corporate banking portal needs to pull live foreign exchange rates from multiple providers and show the best price.,api_integration,system_connectivity
+8bca91ea,We need to connect our collateral management system to triparty agents so margin calls are automated end to end.,api_integration,system_connectivity
+471bef6f,"We want to preserve all raw SWIFT messages, call recordings and chat logs in case regulators request them years later.",data_lake,raw_data_storage
+8e2c0163,Our innovation team wants access to unprocessed customer transaction data to experiment with new fraud detection approaches.,data_lake,raw_data_storage
+6b1ba646,"We need to store all document scans from customer onboarding including passports, utility bills and signed contracts.",data_lake,raw_data_storage
+ceb20ba4,Our quant team wants years of raw market tick data available for backtesting trading strategies.,data_lake,raw_data_storage
+429032a5,"We receive unstructured data from news feeds, social media and analyst reports and want to store it all for future NLP work.",data_lake,raw_data_storage
+58ce10e1,All voice recordings from our trading floor need to be archived in original format for compliance purposes.,data_lake,raw_data_storage
+dd743ecf,We want a landing zone where data from every acquired bank is stored as-is before we decide how to integrate it.,data_lake,raw_data_storage
+68078f05,Our stress testing team needs raw economic scenario data from multiple providers stored in one accessible place.,data_lake,raw_data_storage
+26a71dcd,Leadership needs one trusted view of the companys total risk exposure.,data_warehouse,reporting_foundation
+c480ea36,Customer-facing teams need one complete view of each customer in one place.,data_warehouse,reporting_foundation
+5ef499cc,The board needs one agreed set of risk numbers for reporting instead of different versions from different teams.,data_warehouse,reporting_foundation
+54190f00,We want branch managers to be able to compare their performance against peers using the same metrics and definitions.,data_warehouse,reporting_foundation
+cf4b0fe8,Our product team needs to analyse which customer segments are most profitable across the full product range.,data_warehouse,reporting_foundation
+5323e8d5,We need historical loan performance data going back ten years to build better credit models.,data_warehouse,reporting_foundation
+e6bc13d4,Our audit committee needs to query any historical transaction or customer record for regulatory investigations.,data_warehouse,reporting_foundation
+3afa10df,"We want a single repository of customer net promoter scores, complaint history and churn risk for the retention team.",data_warehouse,reporting_foundation
+e0578e86,"We need to produce the daily general ledger by combining transactions from retail, corporate and investment banking systems every night.",etl_pipeline,data_consolidation
+d07028b5,"Our SWIFT messages need to be parsed, enriched with customer data, and loaded into our payments database each morning.",etl_pipeline,data_consolidation
+2e64c766,We receive account statements from 20 correspondent banks in different formats and need to normalise and load them nightly.,etl_pipeline,data_consolidation
+cf7c3d1a,"Our credit risk team needs a monthly refresh of customer financial data pulled from bureau, internal systems and market data providers.",etl_pipeline,data_consolidation
+9c2c032b,We need to extract all transactions above reporting threshold each day and format them for regulatory submission.,etl_pipeline,data_consolidation
+24871d01,"Our mortgage system needs nightly synchronisation with the land registry, credit bureau and insurance provider.",etl_pipeline,data_consolidation
+fd6a607f,We process cheque clearing by batching all images received during the day and running them through our recognition system overnight.,etl_pipeline,data_consolidation
+f57cf65e,Our finance team needs all branch cash positions consolidated each evening before the next day opens.,etl_pipeline,data_consolidation
+7e6457b4,"We need to block suspicious wire transfers before they leave the bank, not discover them the next morning.",stream_processing,real_time_processing
+34bfa015,Our anti-money laundering team needs to see transaction patterns forming in real time across multiple accounts.,stream_processing,real_time_processing
+ecd5ba16,When a customer's card is used abroad we want to send a push notification before they even leave the terminal.,stream_processing,real_time_processing
+ac81d7fb,Our treasury desk needs live exposure calculations as traders execute positions throughout the day.,stream_processing,real_time_processing
+eff44fd1,We want to detect when a customer is going through financial distress by monitoring transaction behaviour as it happens.,stream_processing,real_time_processing
+496956fc,Our correspondent banking team needs real-time visibility of nostro account balances as payments flow through.,stream_processing,real_time_processing
+63582b82,We need to enforce daily spending limits on corporate cards the moment a transaction is attempted.,stream_processing,real_time_processing
+dcf9f927,Our operations centre needs a live view of all pending settlements to manage intraday liquidity.,stream_processing,real_time_processing
+209e83bf,Nobody in the bank knows who is responsible for the customer master data and every team maintains their own version.,data_governance,data_ownership
+4a5a4fe9,We cannot answer the regulator's question about where the number in our annual report came from.,data_governance,data_ownership
+507d67ff,Three different departments have three different definitions of what counts as an active customer.,data_governance,data_ownership
+d755db0a,"Junior analysts have access to full customer financial data they do not need for their role, which is a compliance risk.",data_governance,data_ownership
+13fbd844,"We do not know which systems contain personal data, making it impossible to respond to GDPR subject access requests.",data_governance,data_ownership
+26b6b3ac,Our data scientists are using a dataset that was deprecated two years ago because nobody told them a new version existed.,data_governance,data_ownership
+3796c92b,"There is no agreed definition of default across our credit risk, finance and regulatory reporting teams.",data_governance,data_ownership
+c483da74,When a senior employee leaves they take all knowledge of what certain database columns mean with them.,data_governance,data_ownership
+9e0456e1,We need to prove to the auditor that nobody tampered with the transaction data used in our financial statements.,data_governance,data_ownership
+f67e722e,Our data is shared with third party vendors but we have no visibility of what they do with it after receiving it.,data_governance,data_ownership
+787eea2b,Business users are creating their own spreadsheet copies of database extracts and making decisions from outdated figures.,data_governance,data_ownership
+b73b0a7e,We have no process for retiring old datasets so the data catalogue is full of tables that no longer exist.,data_governance,data_ownership
+d4464445,Different countries in our group apply different data retention rules making global compliance reporting impossible.,data_governance,data_ownership
+c608c20d,Our merger has left us with two customer databases and no policy for which one is the authoritative source of truth.,data_governance,data_ownership
+c5507313,Sensitive credit committee documents are stored on shared drives with no access controls or audit trail.,data_governance,data_ownership
+2cda54ba,We cannot tell which version of our risk model was used to make a specific lending decision six months ago.,data_governance,data_ownership
+7db4567d,There is no approval process before new data pipelines go to production so bad data enters our warehouse unchecked.,data_governance,data_ownership
+14b15a46,Our privacy team cannot identify all the places where a customer's date of birth is stored across our systems.,data_governance,data_ownership
+48a6f151,Analysts across the bank are spending hours each week searching for data because there is no central catalogue.,data_governance,data_ownership
+5b7dc1d2,We have no policy on how long raw transaction logs should be kept so some regions delete them after 90 days and others never do.,data_governance,data_ownership
+9b2fe8a0,Our cloud migration revealed that nobody documented which legacy tables were still in active use and which were abandoned.,data_governance,data_ownership
+c09741bc,Two business units are collecting the same customer consent information in different formats making consolidation impossible.,data_governance,data_ownership
+17fc9fee,We failed a model risk review because we could not demonstrate the data used to train the model was fit for purpose.,data_governance,data_ownership
+6947c807,There is no process for business users to flag when data looks wrong so errors go unnoticed for months.,data_quality,data_trust
+feb01037,Our data sharing agreements with partners are not documented anywhere making legal review extremely difficult.,data_governance,data_ownership
+816914a0,Our Basel III reports show different risk weighted assets depending on which system produces the number.,data_quality,data_trust
+2933ff24,Customer due diligence records are incomplete across our systems making KYC refresh extremely difficult.,data_quality,data_trust
+b6b8821a,We have duplicate customer records across our retail and private banking systems with no way to link them.,data_quality,data_trust
+ee226dfe,Our transaction monitoring system is generating too many false positives because the underlying customer data is unreliable.,data_quality,data_trust
+b3d6a2da,Interest calculations are wrong because the same product has different rate definitions in different systems.,data_quality,data_trust
+315819e4,We failed a regulatory audit because we could not demonstrate the lineage of figures in our liquidity coverage ratio report.,data_governance,data_ownership
+3348ab2d,Account opening data is missing mandatory fields because branches are finding workarounds in the onboarding system.,data_quality,data_trust
+b1dea11f,Our credit decisions are being challenged because the income data used in scoring comes from an unvalidated source.,data_quality,data_trust
+de5bc499,Our reports show different customer counts depending on which system you query and nobody knows which is correct.,data_quality,data_trust
+551a5bf6,We discovered that 30% of our customer email addresses are invalid and our campaigns are failing because of it.,data_quality,data_trust
+905a42e1,Regulators are asking us to prove the lineage of every number in our capital adequacy report.,data_governance,data_ownership
+2cc13732,Our data scientists complain they spend 80% of their time cleaning data before they can do any analysis.,data_quality,data_trust
+e6b444fa,"We have no idea who owns which dataset, and people keep using outdated versions of the same table.",data_governance,data_ownership
+4990d558,Product prices in our database have duplicates and inconsistencies that cause wrong charges to customers.,data_quality,data_trust
+42ecb8ee,We need to ensure patient records are complete and consistent before they are shared with insurance providers.,data_quality,data_trust
+d5befbea,Our ML model performance is degrading because the input data has started drifting from what it was trained on.,data_quality,data_trust
+c564c4ea,We need automated checks that validate incoming data files before they are loaded into production systems.,data_quality,data_trust
+5d33cdc2,Nobody in our organisation knows what the column named cust_ref_id actually means or where it comes from.,data_governance,data_ownership
+505e7f18,We need a data catalogue so analysts can discover and understand available datasets without asking engineers.,data_governance,data_ownership
+3ffd890a,Our GDPR compliance requires us to track exactly where personal data is stored and who has accessed it.,data_governance,data_ownership
+72607517,Supplier codes are entered differently across regions making it impossible to get a global view of spend.,data_quality,data_trust
+ce1587a5,We need master data management to ensure one consistent definition of a customer across all systems.,data_governance,data_ownership
+ede1e139,Test data in our development environment contains real customer personal data which is a compliance risk.,data_governance,data_ownership
+1d5f5323,We need to detect safety issues from live plant data immediately so operators can react before they become dangerous.,stream_processing,real_time_processing
+fac1e7b9,Air traffic control needs to track the position of every aircraft in national airspace and detect collision risks in real time.,stream_processing,real_time_processing
+c342e771,Our national power grid must detect voltage fluctuations across thousands of nodes instantly to prevent cascading blackouts.,stream_processing,real_time_processing
+ccb90cba,Military drones transmit telemetry continuously and command must be able to override flight paths with zero latency.,stream_processing,real_time_processing
+76ca8add,Our high frequency trading system executes thousands of orders per second and latency above one millisecond costs millions.,stream_processing,real_time_processing
+af598fe0,Doctors need immediate alerts when a patient's condition starts getting worse.,stream_processing,real_time_processing
+19c80d76,Our satellite ground station receives continuous telemetry from 47 active satellites and must flag anomalies immediately.,stream_processing,real_time_processing
+df9a4295,National border security cameras must perform real-time facial recognition against watchlists as travellers pass through.,stream_processing,real_time_processing
+22i9736,"Our autonomous vehicle fleet sends sensor data from LiDAR, cameras and GPS at 100 frames per second requiring instant processing.",stream_processing,real_time_processing
+48d601a6,The stock exchange matching engine must pair buy and sell orders in microseconds across millions of simultaneous participants.,stream_processing,real_time_processing
+ffcedf37,"Our telecommunications network must detect and reroute around node failures across 10,000 km of fibre within milliseconds.",stream_processing,real_time_processing
+5b6bbadb,"Emergency dispatch needs a live map of all ambulances, fire engines and police units updating their positions every second.",stream_processing,real_time_processing
+0a6cc5d5,We need to spot pipeline leaks as soon as they happen so we can act immediately.,stream_processing,real_time_processing
+267b14a2,The national cyber security centre needs to detect and respond to intrusion attempts across government networks as they happen.,stream_processing,real_time_processing
+0dd2ee47,Our particle accelerator generates petabytes of collision data per second and we need to filter relevant events in real time.,stream_processing,real_time_processing
+2f0fa53f,Our smart city traffic management system adjusts signal timing dynamically based on live vehicle density at every junction.,stream_processing,real_time_processing
+f4e43620,The central bank needs to monitor systemic risk across all clearing and settlement activity in the national payment system in real time.,stream_processing,real_time_processing
+f08c3909,Weather data keeps arriving throughout the day and forecasts need to update continuously.,stream_processing,real_time_processing
+35a06163,Our gaming platform needs to react instantly to player actions even during peak usage.,stream_processing,real_time_processing
+4bb87349,"The dam monitoring system tracks water pressure, seismic activity and structural stress and must alert engineers instantly.",stream_processing,real_time_processing
+e2ed0b97,Our submarine cable network must detect signal degradation across transoceanic links and reroute traffic before customers notice.,stream_processing,real_time_processing
+857ee9ae,A national vaccine distribution system needs to track cold chain temperatures for millions of doses in transit in real time.,stream_processing,real_time_processing
+i9ep0o99,We need to detect anomalies in launch data immediately before they turn into failures.,stream_processing,real_time_processing
+b55cc401,Flood warnings need to be issued quickly when river data shows rising risk.,stream_processing,real_time_processing
+8f0c1edf,Our content delivery network must detect DDoS attacks and reroute traffic across 200 edge nodes before services degrade.,stream_processing,real_time_processing
+2a3a0408,Census data comes from many different sources and needs to be combined into one national view.,etl_pipeline,data_consolidation
+2047b135,We need to combine financial data from many parts of the business into one group report.,etl_pipeline,data_consolidation
+4524378c,"Our military logistics command needs to consolidate supply chain data from army, navy and air force systems every morning.",etl_pipeline,data_consolidation
+747f0f38,Patient records are spread across many healthcare providers and we need one unified view.,etl_pipeline,data_consolidation
+968c34f3,"Our university needs to pull student records, grades, attendance and financial data from eight separate systems for accreditation reporting.",etl_pipeline,data_consolidation
+afac89e8,The tax authority receives millions of employer payroll submissions in different formats and must normalise them for processing each month.,etl_pipeline,data_consolidation
+fda65b6d,Sales data from stores in different markets needs to be combined every night into one central view.,etl_pipeline,data_consolidation
+4562a3be,"The space agency needs to combine telemetry, mission logs and ground station data from three continents after every launch.",etl_pipeline,data_consolidation
+dacb38d5,Investment data arrives from many fund managers in different formats and must be combined for reporting.,etl_pipeline,data_consolidation
+2f1d57be,Election results need to be collected and combined quickly from polling locations into one final result.,etl_pipeline,data_consolidation
+bcd4f6a9,Reservation data from many booking systems needs to stay synchronized with our main airline inventory.,etl_pipeline,data_consolidation
+a4cf93a9,The defence ministry needs to consolidate personnel records from all branches of the military into a single HR system quarterly.,etl_pipeline,data_consolidation
+f2dd3173,Clinical trial data from many research sites must be combined and standardized for regulatory reporting.,etl_pipeline,data_consolidation
+c57249e5,Economic indicators from many government departments need to be combined into one official reporting view.,etl_pipeline,data_consolidation
+0633c9e1,Meter readings arrive every day and must be loaded into the billing system.,etl_pipeline,data_consolidation
+e1067bc8,Field reports from many countries need to be combined into one weekly global situation report.,etl_pipeline,data_consolidation
+85236p91,Usage records from different network systems need to be combined into one billing platform.,etl_pipeline,data_consolidation
+051dc977,Delay data ticketing data and maintenance logs need to be combined for daily railway performance reporting.,etl_pipeline,data_consolidation
+d636b277,Production quality data from different plants needs to be combined into one weekly dashboard.,etl_pipeline,data_consolidation
+1d1b93dd,The central bank needs balance sheet data from regulated institutions combined for monthly analysis.,etl_pipeline,data_consolidation
+65f08314,Shipment tracking data from many carrier partners needs to be combined into one customer visibility platform.,etl_pipeline,data_consolidation
+4ead40a0,Exam results from schools across the country need to be collected and turned into national performance statistics.,etl_pipeline,data_consolidation
+2350aa7a,Billing records from different regions need to be combined into customer invoices each month.,etl_pipeline,data_consolidation
+b2afdc87,Competition results from different countries need to be combined to keep world rankings updated.,etl_pipeline,data_consolidation
+ec306b38,Operational data from mining sites needs to be combined into one daily performance report.,etl_pipeline,data_consolidation
+ca002264,"Our government ministry needs a single authoritative source of poverty indicators combining data from social services, tax authority and employment agencies.",data_warehouse,reporting_foundation
+75bd07df,"The defence department needs a unified intelligence picture combining signals, imagery and human intelligence for strategic planning.",data_warehouse,reporting_foundation
+de9b558f,We need one view of route profitability that combines revenue and operating costs.,data_warehouse,reporting_foundation
+2af0fa00,Health data from different care settings needs to be combined so we can analyze long-term population trends.,data_warehouse,reporting_foundation
+cdcd991e,Our multinational needs a consistent view of carbon emissions across all operations for ESG reporting to investors and regulators.,data_warehouse,reporting_foundation
+d911c584,Leaders need one view of the main financial system trends and risks in one place.,data_warehouse,reporting_foundation
+98o31017,We need one place to review mission performance using operational and scientific data together.,data_warehouse,reporting_foundation
+fcb38aa0,Police data from different regions needs to be combined so teams can analyze crime patterns in one place.,data_warehouse,reporting_foundation
+3781a050,Research data across institutions should be combined into one shared reporting view.,data_warehouse,reporting_foundation
+e0935610,"The national infrastructure authority needs a single asset register combining roads, bridges, tunnels and utilities with maintenance history.",data_governance,data_ownership
+8acdd426,We need one trusted view of how our clinical studies are performing.,data_warehouse,reporting_foundation
+ba185f27,Public spending data from government departments needs to be combined for budget planning.,data_warehouse,reporting_foundation
+0ef94f0c,We need one view of fleet performance fuel use and cargo revenue across the shipping business.,data_warehouse,reporting_foundation
+ee6b3337,"The national pension regulator needs a unified view of all defined benefit schemes showing funding levels, sponsor covenant and investment risk.",data_warehouse,reporting_foundation
+e0471a28,We need one view of customer value service usage and churn risk across the business.,data_warehouse,reporting_foundation
+a2b57007,The environmental agency needs one trusted view of the countrys main environmental indicators.,data_warehouse,reporting_foundation
+a3685769,Hotel performance data from many properties needs to be combined into one reporting view.,data_warehouse,reporting_foundation
+58b17c95,Auditors need one place to review public spending contracts and outcomes across government.,data_warehouse,reporting_foundation
+00235d98,We need one central place to review plant performance maintenance history and safety issues.,data_warehouse,reporting_foundation
+61e33d68,Project performance data should be combined into one view for monitoring outcomes and risk.,data_warehouse,reporting_foundation
+2fc609cf,We need one view of reserves costs and market prices across the mining business.,data_warehouse,reporting_foundation
+08152c93,The food safety authority needs one trusted view of how regulated food products move through the supply chain.,data_warehouse,reporting_foundation
+525daaa3,Aircraft production status supply chain delays and quality issues need to be visible in one place.,data_warehouse,reporting_foundation
+99ae67ba,The maritime authority needs one place to review vessel activity cargo information and safety records together.,data_warehouse,reporting_foundation
+14b49074,The broadcaster needs one shared view of audience performance and advertising results across all channels.,data_warehouse,reporting_foundation
+309720a9,We want to keep all raw space imagery so scientists can analyze it again in new ways later.,data_lake,raw_data_storage
+1a61cd6d,The defence intelligence agency needs to store decades of signals intelligence in original format for future analytical techniques.,data_lake,raw_data_storage
+ae9823ff,Our pharmaceutical company must preserve all raw clinical trial data indefinitely in original format for regulatory and litigation purposes.,data_lake,raw_data_storage
+b14285c2,"The national archive needs to digitise and store 200 years of government documents, maps and photographs in original format.",data_lake,raw_data_storage
+cf300021,We want to keep all raw vehicle sensor data so it can be reused for future model training.,data_lake,raw_data_storage
+bfeb6d01,The particle physics laboratory needs to store raw collision event data from experiments that took decades to run and cannot be repeated.,data_lake,raw_data_storage
+66a83f14,Our genomics research institute needs to store raw DNA sequencing data from 5 million patients for longitudinal health studies.,data_lake,raw_data_storage
+79b5e264,The military needs to preserve raw drone footage from decades of operations in original format for future intelligence analysis.,data_lake,raw_data_storage
+b614effd,We keep all raw seismic data so geologists can reprocess it later with new methods.,data_lake,raw_data_storage
+88c4ada1,The national broadcaster wants to preserve every programme ever made in original broadcast quality for future remastering and licensing.,data_lake,raw_data_storage
+3bcf0460,"Our smart city infrastructure generates raw sensor data from traffic lights, parking meters and environmental monitors we want to preserve for future analytics.",data_lake,raw_data_storage
+6ff89c44,The climate research institute needs to store raw atmospheric measurements from weather balloons and satellites going back 50 years.,data_lake,raw_data_storage
+d86be0bb,Our telecommunications company needs to archive raw network packet data for 90 days for lawful interception compliance purposes.,data_lake,raw_data_storage
+f638a0ad,"The international criminal court needs to preserve digital evidence including emails, documents and multimedia files in original format for prosecutions.",data_lake,raw_data_storage
+26e54e5e,Our energy company wants to store raw smart meter readings at one-minute resolution before aggregation in case granular analysis is needed later.,data_lake,raw_data_storage
+279870ac,The central bank wants to preserve raw transaction-level payment data going back 10 years for future systemic risk research.,data_lake,raw_data_storage
+70e237ce,Our social media platform stores every raw user interaction event so product teams can replay and analyse behaviour with new tools.,data_lake,raw_data_storage
+776272fe,"The national geological survey needs to store raw borehole data, seismic surveys and core samples digitised from 100 years of fieldwork.",data_lake,raw_data_storage
+fe0b90a9,Our aerospace company preserves raw flight test data from every aircraft ever certified so engineers can reference it for future designs.,data_lake,raw_data_storage
+8ad17d56,"The food standards agency needs to store raw inspection reports, lab test results and traceability documents in original format for outbreak investigations.",data_lake,raw_data_storage
+715cafcc,Our hospital network wants to store raw MRI and CT scan images at full resolution for future AI diagnostic model development.,data_lake,raw_data_storage
+cfe63a21,The national security agency needs to store intercepted communications in raw encrypted form before decryption capabilities improve.,data_lake,raw_data_storage
+dbfc5668,Our financial exchange stores every raw order book event indefinitely so researchers can reconstruct market microstructure from any historical moment.,data_lake,raw_data_storage
+06a7147b,"The ocean research vessel generates continuous sonar, temperature and salinity readings across transoceanic voyages that we preserve in full fidelity.",data_lake,raw_data_storage
+c319687e,Our smart manufacturing plant stores raw vibration and acoustic data from every machine for future predictive maintenance algorithm development.,data_lake,raw_data_storage
+61948bea,Citizens should be able to complete public services in one place even though the data comes from many government systems.,api_integration,system_connectivity
+31b5d298,Hospital teams should not have to re-enter patient information in different systems for care and billing.,api_integration,system_connectivity
+2f2068b6,"The customs authority needs to connect to shipping manifests, duty calculators and watchlist systems to process container declarations automatically.",api_integration,system_connectivity
+947e4398,When a part is approved the related business systems should update automatically so teams stay aligned.,api_integration,system_connectivity
+efe2332f,Banks and payment partners need one reliable way to exchange settlement information automatically.,api_integration,system_connectivity
+32cbcbd2,"Our global law firm needs to connect matter management, time recording, billing and document systems so lawyers work from one interface.",api_integration,system_connectivity
+0b9ee4e3,Decision makers need information from different operational systems to come together automatically in one place.,api_integration,system_connectivity
+19cf0458,Student information should move automatically between university systems so students do not face disconnected services.,api_integration,system_connectivity
+ca0e5ab2,Drug safety systems and trial systems need to stay connected so monitoring works as one joined-up process.,api_integration,system_connectivity
+02eb97ea,Market grid and weather information should come together automatically so better energy decisions can be made faster.,api_integration,system_connectivity
+ce529214,"The port authority needs to connect vessel tracking, cargo inspection, customs clearance and berth allocation systems for end-to-end port operations.",api_integration,system_connectivity
+3e2e6143,Insurance teams need their core systems to stay connected so work moves smoothly from claims to risk review.,api_integration,system_connectivity
+70b580b4,"The national police service needs to integrate custody management, case files, forensic databases and court scheduling for end-to-end justice workflow.",api_integration,system_connectivity
+7308ace1,Operations and customer teams should see the same updates automatically so satellite services run smoothly.,api_integration,system_connectivity
+2c0001d3,Vaccination information should flow automatically between care providers so records stay complete and up to date.,api_integration,system_connectivity
+1100f6ec,Shipping information should move automatically between booking operations and customs so teams do not chase updates manually.,api_integration,system_connectivity
+41961a8f,Tax returns should be pre-filled automatically using information already available in other systems.,api_integration,system_connectivity
+3849f49c,Safety information should move automatically between critical systems so emergency response is fast and reliable.,api_integration,system_connectivity
+53e57ff1,Aid teams need connected systems so information moves smoothly from donors to field operations and finance.,api_integration,system_connectivity
+3035e30d,Ticketing tracking and passenger information systems need to stay connected so public transport runs smoothly.,api_integration,system_connectivity
+f8597cea,Financial market processes should move automatically between participating organizations without manual handoffs.,api_integration,system_connectivity
+f5a0d538,"Our defence procurement agency needs to connect requirement specification, supplier qualification, contract management and delivery tracking systems.",api_integration,system_connectivity
+2c8c98cc,Official statistics should flow automatically from collection to publication without teams moving the data by hand.,api_integration,system_connectivity
+5b6854a4,Media teams need connected systems so content rights distribution and performance information stay in sync automatically.,api_integration,system_connectivity
+9d6dd6a3,"The emergency management agency needs to connect weather services, infrastructure monitoring, resource dispatch and public alert systems for coordinated crisis response.",api_integration,system_connectivity
+45cabc57,Different fraud teams keep rebuilding similar customer signals instead of reusing the same model inputs.,ml_feature_store,ai_data_preparation
+5291f7a6,"Our defence contractor needs consistent threat assessment features shared across early warning, targeting and logistics optimisation models.",ml_feature_store,ai_data_preparation
+f460a06c,"The healthcare network runs separate readmission, deterioration and length-of-stay models that all need the same patient history features computed differently.",ml_feature_store,ai_data_preparation
+620d81e5,Different telecom models keep rebuilding the same customer behaviour inputs instead of sharing them.,ml_feature_store,ai_data_preparation
+7d33a5de,The credit reference agency needs consistent feature definitions shared across all lenders using our scoring platform to ensure regulatory fairness.,ml_feature_store,ai_data_preparation
+3ac2df54,Retail models in different markets should reuse the same product and location inputs instead of rebuilding them each time.,ml_feature_store,ai_data_preparation
+1911ddb1,The central bank's systemic risk models and individual institution stress tests use the same macroeconomic features but compute them inconsistently.,ml_feature_store,ai_data_preparation
+4c7d17c1,"Our autonomous driving platform has perception, prediction and planning models that all require consistent representations of the surrounding environment.",ml_feature_store,ai_data_preparation
+f465f1c8,"The national tax authority runs audit selection, compliance risk and refund fraud models that all need consistent taxpayer behaviour features.",ml_feature_store,ai_data_preparation
+8d6f1d8a,"Our pharmaceutical company needs consistent molecular and clinical features shared across drug discovery, trial design and safety monitoring models.",ml_feature_store,ai_data_preparation
+0ed41b16,"The energy grid operator runs demand forecasting, fault prediction and renewable optimisation models that all require consistent weather and load features.",ml_feature_store,ai_data_preparation
+738254bb,"Our satellite imagery company needs consistent geospatial features shared across change detection, classification and object recognition models.",ml_feature_store,ai_data_preparation
+2ba93f01,"The national border agency runs document verification, behavioural risk and biometric matching models that all need consistent traveller history features.",ml_feature_store,ai_data_preparation
+eb97a61e,"Our global news agency needs consistent article and author features shared across content recommendation, fact-checking and sentiment analysis models.",ml_feature_store,ai_data_preparation
+962680l7,"The insurance marketplace needs consistent risk features shared across underwriting, claims and fraud models to ensure consistent customer outcomes.",ml_feature_store,ai_data_preparation
+7a1410aa,"Our manufacturing conglomerate runs quality prediction, predictive maintenance and yield optimisation models that each recompute the same sensor aggregations.",ml_feature_store,ai_data_preparation
+f3fe212c,"The national intelligence agency needs consistent entity resolution features shared across link analysis, anomaly detection and pattern recognition systems.",ml_feature_store,ai_data_preparation
+a6879752,"Our logistics network needs consistent route, driver and vehicle features shared across ETA prediction, route optimisation and safety scoring models.",ml_feature_store,ai_data_preparation
+b69f8462,"The genomics platform needs consistent variant annotation and clinical features shared across disease risk, drug response and ancestry models.",ml_feature_store,ai_data_preparation
+a90aeec8,Our global bank needs point-in-time correct macroeconomic and customer features for backtesting 300 credit models across 25 years of history.,ml_feature_store,ai_data_preparation
+48709ba9,"The smart city platform runs traffic prediction, energy optimisation and public safety models that all need consistent spatial and temporal features.",ml_feature_store,ai_data_preparation
+a2c07fcf,"Our video streaming platform has recommendation, content moderation and ad targeting models that all need consistent viewer behaviour features.",ml_feature_store,ai_data_preparation
+cd8af8b2,"The aviation safety regulator runs incident prediction, maintenance scheduling and crew fatigue models that need consistent flight operations features.",ml_feature_store,ai_data_preparation
+6b660375,"Our climate modelling institute needs consistent atmospheric and oceanic features shared across temperature, precipitation and extreme event prediction models.",ml_feature_store,ai_data_preparation
+3dbfe0b5,"The national welfare agency runs eligibility, fraud and intervention effectiveness models that all need consistent claimant circumstance features.",ml_feature_store,ai_data_preparation
+65b8d770,Our global CDN serves the same static assets to billions of users daily and without caching origin servers would be overwhelmed instantly.,data_caching,performance_optimization
+130e9751,The national mapping service recalculates the same popular journey routes millions of times per day instead of caching precomputed results.,data_caching,performance_optimization
+394710f6,Our stock exchange reference data including instrument definitions and trading rules is queried by every order but never changes during the trading day.,data_caching,performance_optimization
+8u356616,The government benefits portal calculates eligibility from the same rules engine for the same citizens multiple times per session.,data_caching,performance_optimization
+1ff8f83a,Our global e-commerce platform recalculates tax rates and shipping estimates on every product page load for the same destination combinations.,data_caching,performance_optimization
+8a58d465,The national health portal serves the same drug information and dosage guidance to millions of queries per day from a slow database.,data_caching,performance_optimization
+2a0f88e1,Our scientific computing cluster reruns the same preprocessing steps on the same datasets for every researcher who accesses the platform.,data_caching,performance_optimization
+31dbc5ce,The national weather service delivers the same forecast data to millions of app requests per hour by querying the model output each time.,data_caching,performance_optimization
+4a1edc63,Our global video platform transcodes and serves the same popular content billions of times without caching at the edge.,data_caching,performance_optimization
+2f92d168,The central bank's RTGS system looks up the same settlement account attributes for every transaction processed during the day.,data_caching,performance_optimization
+5255b32e,Our military intelligence platform regenerates the same threat assessments for the same regions every time an analyst opens the dashboard.,data_caching,performance_optimization
+a7550c6b,The national passport office recalculates applicant eligibility checks from scratch on every step of a multi-stage online application.,data_caching,performance_optimization
+a5c24a61,Our satellite navigation system recalculates atmospheric correction models from scratch for every positioning request rather than sharing computed corrections.,data_caching,performance_optimization
+475f3f26,The global airline reservation system recalculates seat availability and pricing rules for the same popular routes thousands of times per second.,data_caching,performance_optimization
+c5d20ec2,Our power trading platform recalculates grid constraint penalties from the same network topology data on every bid submission.,data_caching,performance_optimization
+567d6a4f,The genomics research platform re-executes the same reference genome alignment for every researcher querying the same variants.,data_caching,performance_optimization
+29267cd1,Our global telecommunications network recalculates roaming tariffs from static rate tables on every call attempt across 200 partner networks.,data_caching,performance_optimization
+4750d688,The national vehicle licensing authority rechecks the same insurance and MOT database for the same plate every time a police officer queries it.,data_caching,performance_optimization
+efb6ce46,Our fraud detection system re-fetches the same customer profile and historical behaviour on every transaction even when nothing has changed.,data_caching,performance_optimization
+6681e79a,The semiconductor design platform regenerates the same standard cell library characteristics for every simulation run by every engineer.,data_caching,performance_optimization
+c00c4e26,Our university's learning platform recomputes the same course content and student progress metrics on every page load for every session.,data_caching,performance_optimization
+f4ef566c,The international customs system re-validates the same HS tariff codes and duty rates against a static table on every declaration.,data_caching,performance_optimization
+1791f789,Our digital banking platform recalculates available overdraft limits from static credit policy rules on every balance enquiry.,data_caching,performance_optimization
+57f7f5dc,The national public transport app recalculates the same timetable data for the same popular routes millions of times per day.,data_caching,performance_optimization
+706e96ed,Our global cloud platform re-evaluates the same IAM policy rules for the same users and resources on every API request.,data_caching,performance_optimization
+0fb622d3,Different countries define revenue differently so group reporting turns into a long reconciliation exercise.,data_governance,data_ownership
+611c54de,The defence ministry has classified data stored across systems with different security classifications and no unified access control policy.,data_governance,data_ownership
+ffa96cb0,Our national health service cannot tell patients which systems hold their personal data when they exercise their right of access.,data_governance,data_ownership
+5fcffe77,The central bank has no lineage documentation for the figures in its financial stability report making regulatory review impossible.,data_governance,data_ownership
+e851cbaa,We cannot prove which data version was used to support an old drug approval decision.,data_governance,data_ownership
+9e2b818a,Important data knowledge lives only in people's heads and there is no central catalog of where data is stored.,data_governance,data_ownership
+dadeceaa,Different teams use different definitions of a store which causes constant reporting disagreements.,data_governance,data_ownership
+9bcfac0a,The intelligence agency has no process to ensure analytical products are based on the most current and authorised data sources.,data_governance,data_ownership
+96922a6e,Our national statistics office publishes figures that different government departments dispute because there is no single authoritative data source.,data_governance,data_ownership
+46efea63,Customer data moves across countries but there is no clear policy for how it should be governed.,data_governance,data_ownership
+c30ccb48,"Our global energy company has no master list of assets so the same power plant appears under different names in finance, operations and maintenance systems.",data_governance,data_ownership
+d70659c3,The university research consortium has no policy on data sharing between institutions leaving researchers uncertain about what they can publish.,data_governance,data_ownership
+29f90f1b,"Our airline has no single definition of a flight causing revenue, operations and safety teams to report different numbers for the same routes.",data_governance,data_ownership
+bb2399df,The national tax authority cannot trace which rules version was applied to a taxpayer assessment made three years ago when it is challenged in court.,data_governance,data_ownership
+a235e617,Patient records are spread across merged systems and nobody knows which one should be treated as the main record.,data_governance,data_ownership
+bff2d7e3,"The ministry of justice has no data sharing agreement between police, prosecution and courts so case data is re-entered manually at every handoff.",data_governance,data_ownership
+f34856da,"Our sovereign wealth fund has no data governance framework covering how investment data flows between front office, risk and compliance systems.",data_governance,data_ownership
+92043a16,"The international shipping company cannot determine vessel ownership consistently across flag state, operator, charterer and beneficial owner records.",data_governance,data_ownership
+5bc85981,"Our telecoms group has no agreed customer identifier across its mobile, broadband and TV divisions making group-level analytics impossible.",data_governance,data_ownership
+e8060608,"The national grid operator has no authoritative asset register so maintenance, operations and planning teams work from different views of the network.",data_governance,data_ownership
+69r33030,Our global law firm has no policy governing which client data can be used for AI model training and which must remain confidential.,data_governance,data_ownership
+ff81bf09,The central government has no cross-departmental data sharing framework so duplicate data collection costs taxpayers billions each year.,data_governance,data_ownership
+2dfd6f28,"Our semiconductor company has no traceability between design specifications, manufacturing parameters and test results making quality investigations very slow.",data_governance,data_ownership
+db3bdfd0,The international development organisation has no standard definition of a beneficiary across its programmes making impact measurement unreliable.,data_governance,data_ownership
+c2afa552,Our nuclear operator has no unified document control system so maintenance engineers sometimes work from superseded procedures.,data_governance,data_ownership
+5db37250,Our satellite positioning data has systematic errors introduced by uncalibrated ground stations that corrupt navigation outputs for entire regions.,data_quality,data_trust
+3383f4e3,Some diagnostic results were linked to the wrong patients because of data entry mistakes.,data_quality,data_trust
+c0061521,Our global supply chain model keeps producing infeasible production plans because inventory levels in the source system are chronically inaccurate.,data_quality,data_trust
+da2e0359,The defence logistics system has spare parts listed as available in the catalogue that have not been in stock for years causing failed missions.,data_quality,data_trust
+b1f718c2,Forecasts are unreliable because historical temperature data is inconsistent.,data_quality,data_trust
+060ea5c8,Errors in the voter database could prevent eligible people from voting.,data_quality,data_trust
+483z5897,Our aircraft maintenance tracking system shows components as airworthy that have exceeded their service life due to incorrect date calculations.,data_quality,data_trust
+e411ff39,The international sanctions list has duplicate and incorrectly formatted entity names causing our screening system to miss matches.,data_quality,data_trust
+f88cf5d6,Our genomics platform has sequencing errors in 2% of samples that are propagating into clinical decision support tools used by doctors.,data_quality,data_trust
+773cfce0,The welfare database still includes many people who should no longer be active leading to false payments.,data_quality,data_trust
+1cfef40f,Our power grid model produces dangerously optimistic stability assessments because transformer ratings in the asset database are systematically overstated.,data_quality,data_trust
+695788ed,The military equipment registry has vehicles recorded as operational that are actually awaiting repair making force readiness assessments unreliable.,data_quality,data_trust
+199b7250,Our pharmaceutical trial data has missing adverse event records because field sites used different version forms creating gaps in the safety database.,data_quality,data_trust
+a8bc6200,Property ownership records conflict because older paper records were digitized incorrectly.,data_quality,data_trust
+a7c2f045,Our autonomous vehicle training dataset contains mislabelled objects that are causing the perception model to misidentify pedestrians as obstacles.,data_quality,data_trust
+406df332,The payroll system still includes employees who should no longer be paid because HR and finance records do not match.,data_quality,data_trust
+a9d5e674,Our credit bureau has inconsistent default flag definitions across its history making long-term trend analysis of consumer credit unreliable.,data_governance,data_ownership
+fa853e5f,The national disease surveillance system undercounts cases because reporting codes used by hospitals changed three times without retrospective correction.,data_quality,data_trust
+d70ddb2f,Our nuclear plant safety database has maintenance records with incorrect timestamps that make it impossible to verify inspection compliance.,data_quality,data_trust
+fe7a9bd1,The international trade statistics show impossible bilateral trade imbalances because exporting and importing countries use different valuation methods.,data_governance,data_ownership
+394522b8,Our satellite imagery analysis pipeline produces false change detections because different sensors have inconsistent radiometric calibration.,data_quality,data_trust
+6c43829a,Many pension members have incorrect contribution records because payroll data has been wrong for years.,data_quality,data_trust
+93e55054,Our train control system has track geometry measurements with systematic sensor drift that is causing unnecessary speed restrictions.,data_quality,data_trust
+bbed92e3,The national crime database has duplicate case records because officers in different forces recorded the same incident under different reference numbers.,data_quality,data_trust
+8fb27a52,Our deep sea drilling platform has sensor readings with timestamp errors caused by timezone misconfiguration that invalidate safety compliance logs.,data_quality,data_trust
+a101api1,Our tools should share data automatically so teams do not have to enter the same information twice.,api_integration,system_connectivity
+a101api2,We want customer information to move automatically between our systems without manual work.,api_integration,system_connectivity
+a101api3,When a customer updates their details in one system it should update everywhere else automatically.,api_integration,system_connectivity
+a101api4,Staff should not need to copy information from one business tool into another by hand.,api_integration,system_connectivity
+a101api5,Our sales and finance systems need to stay connected so invoices and orders match automatically.,api_integration,system_connectivity
+a101api6,We want new employee information to flow automatically from HR into all the systems they need.,api_integration,system_connectivity
+a101api7,When a customer places an order the warehouse system should be updated automatically.,api_integration,system_connectivity
+a101api8,Our systems need to talk to each other so people stop sending spreadsheets back and forth.,api_integration,system_connectivity
+a101api9,We want information entered in one business tool to appear in the others without delay.,api_integration,system_connectivity
+a101api10,Support teams should be able to see updates from other systems without re-entering the same case details.,api_integration,system_connectivity
+a101api11,We need our booking and payment systems to stay in sync automatically.,api_integration,system_connectivity
+a101api12,Our business systems should exchange updates automatically so staff do not have to chase missing information.,api_integration,system_connectivity
+a101api13,We want suppliers and internal systems to exchange order information directly instead of through email.,api_integration,system_connectivity
+a101api14,When a product changes in one system it should be reflected in partner systems automatically.,api_integration,system_connectivity
+a101api15,Our teams need connected systems so information flows smoothly from one step of the process to the next.,api_integration,system_connectivity
+a101dwh1,Management wants one trusted place to see company performance.,data_warehouse,reporting_foundation
+a101dwh2,Different departments should see the same KPI numbers in one place.,data_warehouse,reporting_foundation
+a101dwh3,We need one reporting view across the company so everyone works from the same numbers.,data_warehouse,reporting_foundation
+a101dwh4,Leaders want a single trusted source for historical business reporting.,data_warehouse,reporting_foundation
+a101dwh5,We want one central place for reporting across sales finance and operations.,data_warehouse,reporting_foundation
+a101dwh6,Our executives need one place to review business performance over time.,data_warehouse,reporting_foundation
+a101dwh7,We need a single reporting layer so teams stop arguing about which numbers are correct.,data_warehouse,reporting_foundation
+a101dwh8,The business needs one trusted view of performance across all departments.,data_warehouse,reporting_foundation
+a101dwh9,We want historical reporting in one place instead of pulling numbers from many systems.,data_warehouse,reporting_foundation
+a101dwh10,Our managers need one shared reporting view for revenue cost and performance.,data_warehouse,reporting_foundation
+a101dwh11,We need one place where business users can analyze trusted historical data.,data_warehouse,reporting_foundation
+a101dwh12,The leadership team wants one source for company-wide reporting.,data_warehouse,reporting_foundation
+a101dwh13,We want one reporting view where all teams use the same definitions and the same numbers.,data_warehouse,reporting_foundation
+a101dwh14,Our business needs one trusted history of performance for planning and reporting.,data_warehouse,reporting_foundation
+a101dwh15,Different reporting teams need one shared place to work with trusted historical data.,data_warehouse,reporting_foundation

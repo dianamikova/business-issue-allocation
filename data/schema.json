@@ -1,0 +1,21 @@
+{
+  "task_type": "single_label_text_classification",
+  "fields": {
+    "query_id": {
+      "type": "string",
+      "required": true
+    },
+    "query": {
+      "type": "string",
+      "required": true
+    },
+    "label_it": {
+      "type": "string",
+      "required": true
+    },
+    "label_bus": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

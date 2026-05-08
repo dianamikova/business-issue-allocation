@@ -1,0 +1,73 @@
+{
+  "runs": [
+    {
+      "classifier": "svm",
+      "target_column": "label_it",
+      "text_column": "query",
+      "train_size": 372,
+      "test_size": 93,
+      "accuracy": 0.8817204301075269,
+      "macro_f1": 0.8835939224174518,
+      "weighted_f1": 0.8822076005377714,
+      "macro_precision": 0.8902652902652901,
+      "macro_recall": 0.8820987654320986,
+      "label_distribution": {
+        "data_warehouse": 63,
+        "stream_processing": 51,
+        "etl_pipeline": 48,
+        "data_lake": 48,
+        "api_integration": 61,
+        "ml_feature_store": 48,
+        "data_caching": 47,
+        "data_governance": 60,
+        "data_quality": 39
+      }
+    },
+    {
+      "classifier": "random_forest",
+      "target_column": "label_it",
+      "text_column": "query",
+      "train_size": 372,
+      "test_size": 93,
+      "accuracy": 0.8064516129032258,
+      "macro_f1": 0.7994143226341369,
+      "weighted_f1": 0.8012237083244773,
+      "macro_precision": 0.8201465201465202,
+      "macro_recall": 0.7987654320987655,
+      "label_distribution": {
+        "data_warehouse": 63,
+        "stream_processing": 51,
+        "etl_pipeline": 48,
+        "data_lake": 48,
+        "api_integration": 61,
+        "ml_feature_store": 48,
+        "data_caching": 47,
+        "data_governance": 60,
+        "data_quality": 39
+      }
+    },
+    {
+      "classifier": "logreg",
+      "target_column": "label_it",
+      "text_column": "query",
+      "train_size": 372,
+      "test_size": 93,
+      "accuracy": 0.8387096774193549,
+      "macro_f1": 0.8412932211693822,
+      "weighted_f1": 0.8388341620539763,
+      "macro_precision": 0.852950752950753,
+      "macro_recall": 0.8395061728395061,
+      "label_distribution": {
+        "data_warehouse": 63,
+        "stream_processing": 51,
+        "etl_pipeline": 48,
+        "data_lake": 48,
+        "api_integration": 61,
+        "ml_feature_store": 48,
+        "data_caching": 47,
+        "data_governance": 60,
+        "data_quality": 39
+      }
+    }
+  ]
+}
