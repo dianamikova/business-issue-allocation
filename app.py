@@ -17,12 +17,12 @@ def build_demo():
         if not text or not text.strip():
             return "Please enter a business issue description.", "", {}
         result = predictor.predict(text)
-        confidence_text = f'{result["confidence"] * 100:.1f}%'
+        logreg_confidence = f'{result["logreg_confidence"] * 100:.1f}%'
         top_scores = {
             prediction["label"]: round(prediction["confidence"], 4)
             for prediction in result["top_predictions"]
         }
-        return result["predicted_label"], confidence_text, top_scores
+        return result["predicted_label"], logreg_confidence, top_scores
 
     return gr.Interface(
         fn=classify_issue,
@@ -36,7 +36,7 @@ def build_demo():
         ),
         outputs=[
             gr.Textbox(label="Predicted label"),
-            gr.Textbox(label="Confidence"),
+            gr.Textbox(label="Logistic Regression confidence"),
             gr.Label(label="Top predictions"),
         ],
         title="Business Issue Allocation",
@@ -55,6 +55,7 @@ def build_demo():
                 "Analysts keep seeing different definitions of customer across systems and do not know which table is authoritative."
             ],
         ],
+        flagging_mode="never",
     )
 
 

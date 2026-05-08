@@ -19,6 +19,7 @@ from src.config import (
     DEFAULT_TARGET_COLUMN,
     DEFAULT_TEXT_COLUMN,
     LABEL_ENCODER_PATH,
+    LOGREG_MODEL_PATH,
     METRICS_PATH,
     MODEL_PATH,
     RAW_DATA_PATH,
@@ -27,7 +28,7 @@ from src.config import (
 )
 from src.data_utils import load_csv, save_json, validate_dataframe
 from src.embeddings import encode_texts, load_embedding_model
-from src.model_utils import build_classifier
+from src.model_utils import build_classifier, build_logreg
 
 
 def parse_args() -> argparse.Namespace:
@@ -41,6 +42,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+
     df = load_csv(RAW_DATA_PATH)
     validate_dataframe(df, args.text_column, args.target_column, args.id_column)
 
@@ -59,8 +61,16 @@ def main() -> None:
     y_train = label_encoder.fit_transform(train_df[args.target_column])
     y_test = label_encoder.transform(test_df[args.target_column])
 
+    # Train main classifier
     classifier = build_classifier(args.classifier)
     classifier.fit(x_train, y_train)
+
+    # Always train and save a LogReg alongside for calibrated probabilities
+    logreg = build_logreg()
+    logreg.fit(x_train, y_train)
+    joblib.dump(logreg, LOGREG_MODEL_PATH)
+    print(f"Saved logreg model to {LOGREG_MODEL_PATH}")
+
     y_pred = classifier.predict(x_test)
 
     metrics = {
@@ -89,11 +99,16 @@ def main() -> None:
         TASK_CONFIG_PATH,
     )
     save_json(METRICS_PATH, metrics)
+
     if RESULTS_PATH.exists():
         all_results = json.loads(RESULTS_PATH.read_text(encoding="utf-8"))
     else:
         all_results = {"runs": []}
-    all_results["runs"] = [run for run in all_results.get("runs", []) if run.get("classifier") != args.classifier]
+
+    all_results["runs"] = [
+        run for run in all_results.get("runs", [])
+        if run.get("classifier") != args.classifier
+    ]
     all_results["runs"].append(metrics)
     save_json(RESULTS_PATH, all_results)
 

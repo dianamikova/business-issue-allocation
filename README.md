@@ -6,7 +6,7 @@ A text classification system that maps a natural language description of a busin
 
 ## What It Does
 
-A business user or data engineer describes a problem in plain English. The system classifies it into one of nine solution categories:
+A business user describes a problem in plain English. The system classifies it into one of nine solution categories:
 
 | Label | Description |
 |-------|-------------|
@@ -91,7 +91,7 @@ business-issue-allocation/
 **Requirements:** Python 3.10 or higher
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/business-issue-allocation.git
+git clone https://github.com/dianamikova/business-issue-allocation.git
 cd business-issue-allocation
 
 python3 -m venv .venv
@@ -154,24 +154,27 @@ Open the local Gradio URL shown in the terminal.
 
 All classifiers were evaluated on a held-out test set (20% of the dataset, stratified split).
 
-Embedding model: `sentence-transformers/all-mpnet-base-v2`
+### Embedding model: `sentence-transformers/all-mpnet-base-v2`
 
 | Classifier | Accuracy | Macro F1 |
 |-----------|----------|----------|
-| SVM | **88.2%** | **88.4%** |
+| **SVM** | **88.2%** | **88.4%** |
 | Logistic Regression | 83.9% | 84.1% |
 | Random Forest | 80.6% | 79.9% |
 
-The SVM classifier was selected as the final model.
+### Embedding model: `sentence-transformers/all-MiniLM-L6-v2`
 
-Embedding model comparison on SVM:
+| Classifier | Accuracy | Macro F1 |
+|-----------|----------|----------|
+| **SVM** | **87.1%** | **86.4%** |
+| Logistic Regression | 83.9% | 83.2% |
+| Random Forest | 80.6% | 80.0% |
 
-| Embedding Model | Accuracy | Macro F1 |
-|----------------|----------|----------|
-| all-mpnet-base-v2 | **88.2%** | **88.4%** |
-| all-MiniLM-L6-v2 | 87.1% | 86.4% |
+The SVM classifier with `all-mpnet-base-v2` was selected as the final model (88.4% macro F1).
 
----
+> **Note:** Random Forest accuracy is identical (80.6%) across both embedding models — it barely benefits from the higher quality embeddings. SVM gains the most from mpnet (+2.0% macro F1), suggesting it makes better use of the richer vector representations.
+
+
 
 ## Dataset
 
@@ -191,11 +194,11 @@ This tool is designed to assist technical routing decisions, not to replace huma
 
 ## AI Contributions
 
-This project was developed with assistance from Claude (Anthropic) for dataset generation, code scaffolding and documentation. All examples were reviewed and validated by the author. The classifier training, evaluation and final model selection were performed and verified by the author.
+This project was developed iteratively with assistance from Claude (Anthropic) and Codex for dataset generation, code scaffolding, and documentation. All examples were reviewed and validated by the author. The classifier training, evaluation, and final model selection were performed and verified by the author.
 
 ---
 
 ## Author
 
 Diana Mikova
-Uppsala University — Information Retrieval, 2026
+Uppsala University -- Information Retrieval, 2026

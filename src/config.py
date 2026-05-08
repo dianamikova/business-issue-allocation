@@ -1,10 +1,10 @@
 from pathlib import Path
 
-
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 RAW_DATA_PATH = PROJECT_ROOT / "data" / "raw" / "data.csv"
 ARTIFACTS_DIR = PROJECT_ROOT / "artifacts"
 MODEL_PATH = ARTIFACTS_DIR / "model.joblib"
+LOGREG_MODEL_PATH = ARTIFACTS_DIR / "logreg_model.joblib"
 LABEL_ENCODER_PATH = ARTIFACTS_DIR / "label_encoder.joblib"
 METRICS_PATH = ARTIFACTS_DIR / "metrics.json"
 RESULTS_PATH = ARTIFACTS_DIR / "all_results.json"

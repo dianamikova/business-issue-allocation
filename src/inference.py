@@ -1,9 +1,15 @@
 import json
-
 import joblib
 import numpy as np
 
-from src.config import DEFAULT_TARGET_COLUMN, DEFAULT_TEXT_COLUMN, LABEL_ENCODER_PATH, MODEL_PATH, TASK_CONFIG_PATH
+from src.config import (
+    DEFAULT_TARGET_COLUMN,
+    DEFAULT_TEXT_COLUMN,
+    LABEL_ENCODER_PATH,
+    LOGREG_MODEL_PATH,
+    MODEL_PATH,
+    TASK_CONFIG_PATH,
+)
 from src.embeddings import encode_texts, load_embedding_model
 
 
@@ -11,6 +17,7 @@ class Predictor:
     def __init__(self) -> None:
         self.embedding_model = load_embedding_model()
         self.classifier = joblib.load(MODEL_PATH)
+        self.logreg = joblib.load(LOGREG_MODEL_PATH)
         self.label_encoder = joblib.load(LABEL_ENCODER_PATH)
         self.task_config = self._load_task_config()
 
@@ -22,21 +29,39 @@ class Predictor:
 
     def predict(self, text: str) -> dict:
         features = encode_texts(self.embedding_model, [text])
+
+        # SVM prediction and top predictions
         prediction = self.classifier.predict(features)[0]
         label = self.label_encoder.inverse_transform([prediction])[0]
-        scores = self._get_scores(features)[0]
-        probabilities = self._scores_to_probabilities(scores)
-        labels = self.label_encoder.inverse_transform(np.arange(len(probabilities)))
+
+        svm_scores = self._get_scores(features)[0]
+        svm_probs = self._scores_to_probabilities(svm_scores)
+        labels = self.label_encoder.inverse_transform(
+            np.arange(len(svm_probs))
+        )
         ranked = sorted(
-            zip(labels, probabilities),
+            zip(labels, svm_probs),
             key=lambda item: item[1],
             reverse=True,
         )
+
+        # LogReg probability for top predicted label only
+        logreg_probs = self.logreg.predict_proba(features)[0]
+        logreg_classes = self.label_encoder.inverse_transform(
+            np.arange(len(logreg_probs))
+        )
+        logreg_prob_map = dict(zip(logreg_classes, logreg_probs))
+        logreg_confidence = float(logreg_prob_map.get(label, 0.0))
+
         return {
-            "text_column": self.task_config.get("text_column", DEFAULT_TEXT_COLUMN),
-            "target_column": self.task_config.get("target_column", DEFAULT_TARGET_COLUMN),
+            "text_column": self.task_config.get(
+                "text_column", DEFAULT_TEXT_COLUMN
+            ),
+            "target_column": self.task_config.get(
+                "target_column", DEFAULT_TARGET_COLUMN
+            ),
             "predicted_label": label,
-            "confidence": float(max(probabilities)),
+            "logreg_confidence": logreg_confidence,
             "top_predictions": [
                 {"label": ranked_label, "confidence": float(confidence)}
                 for ranked_label, confidence in ranked[:3]
@@ -50,7 +75,9 @@ class Predictor:
             scores = self.classifier.decision_function(features)
             return np.atleast_2d(scores)
         predictions = self.classifier.predict(features)
-        one_hot = np.zeros((len(predictions), len(self.label_encoder.classes_)))
+        one_hot = np.zeros(
+            (len(predictions), len(self.label_encoder.classes_))
+        )
         one_hot[np.arange(len(predictions)), predictions] = 1.0
         return one_hot
 
