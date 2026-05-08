@@ -6,7 +6,7 @@ A text classification system that maps a natural language description of a busin
 
 ## What It Does
 
-A business user or data engineer describes a problem in plain English. The system classifies it into one of nine solution categories:
+A business user describes a problem in plain English. The system classifies it into one of nine solution categories:
 
 | Label | Description |
 |-------|-------------|
