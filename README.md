@@ -91,7 +91,7 @@ business-issue-allocation/
 **Requirements:** Python 3.10 or higher
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/business-issue-allocation.git
+git clone https://github.com/dianamikova/business-issue-allocation.git
 cd business-issue-allocation
 
 python3 -m venv .venv
