@@ -191,11 +191,11 @@ This tool is designed to assist technical routing decisions, not to replace huma
 
 ## AI Contributions
 
-This project was developed with assistance from Claude (Anthropic) for dataset generation, code scaffolding and documentation. All examples were reviewed and validated by the author. The classifier training, evaluation and final model selection were performed and verified by the author.
+This project was developed iteratively with assistance from Claude (Anthropic) and Codex for dataset generation, code scaffolding, and documentation. All examples were reviewed and validated by the author. The classifier training, evaluation, and final model selection were performed and verified by the author.
 
 ---
 
 ## Author
 
 Diana Mikova
-Uppsala University — Information Retrieval, 2026
+Uppsala University -- Information Retrieval, 2026
