@@ -37,7 +37,10 @@ Each example has two labels: `label_it` (technical, used for training) and `labe
 
 ## Method and Results
 
-Text is encoded using a pretrained sentence transformer model as a frozen feature extractor (Reimers & Gurevych, 2019). Two embedding models were compared: `all-mpnet-base-v2`, based on the MPNet architecture (Song et al., 2020), and `all-MiniLM-L6-v2` as a lighter baseline. Three classifiers were trained and evaluated on each. The approach follows the structure of the example project provided for this course (Moëll, 2025).
+The approach follows the structure of the example project provided for this course (Moëll, 2025).
+Text is encoded using a pretrained sentence transformer model as a frozen feature extractor (Reimers & Gurevych, 2019). Two embedding models were compared: `all-mpnet-base-v2`, based on the MPNet architecture (Song et al., 2020), and `all-MiniLM-L6-v2`. Three classifiers were trained and evaluated on each. 
+
+`all-MiniLM-L6-v2` was considered as the primary model due to its fast inference speed, making it attractive for interactive demos. However, `all-mpnet-base-v2` was selected based on its stronger performance on the Sentence Embeddings Benchmark, while still being fast enough for real-time use.
 
 **Embedding model: `sentence-transformers/all-MiniLM-L6-v2`**
 
@@ -56,7 +59,7 @@ Text is encoded using a pretrained sentence transformer model as a frozen featur
 | Random Forest | 80.6% | 79.9% |
 
 
-SVM with all-mpnet-base-v2 was selected as the final model. A notable finding is that Random Forest shows almost no improvement from the higher-quality embedding model, while SVM gains +2.0% macro F1 — suggesting SVM makes better use of richer vector representations. The demo uses SVM for prediction and a separately trained Logistic Regression to display a more reliable confidence score.
+`SVM` with `all-mpnet-base-v2` was selected as the final model. A notable finding is that Random Forest shows almost no improvement from the higher-quality embedding model, while SVM gains +2.0% macro F1, suggesting SVM makes better use of richer vector representations. The demo uses SVM for prediction and a separately trained Logistic Regression to display a more reliable confidence score.
 
 ---
 
