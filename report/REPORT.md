@@ -37,7 +37,7 @@ Each example has two labels: `label_it` (technical, used for training) and `labe
 
 ## Method and Results
 
-Text is encoded using a pretrained sentence transformer model as a frozen feature extractor (Reimers & Gurevych, 2019). Two embedding models were compared: `all-mpnet-base-v2`, based on the MPNet architecture (Song et al., 2020), and `all-MiniLM-L6-v2` as a lighter baseline. Three classifiers were trained and evaluated on each.
+Text is encoded using a pretrained sentence transformer model as a frozen feature extractor (Reimers & Gurevych, 2019). Two embedding models were compared: `all-mpnet-base-v2`, based on the MPNet architecture (Song et al., 2020), and `all-MiniLM-L6-v2` as a lighter baseline. Three classifiers were trained and evaluated on each. The approach follows the structure of the example project provided for this course (Moëll, 2025).
 
 **Embedding model: `sentence-transformers/all-MiniLM-L6-v2`**
 
@@ -76,3 +76,4 @@ The experience confirmed that AI tools are powerful for generating first drafts 
 
 - Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. *EMNLP 2019*.
 - Song, K., Tan, X., Qin, T., Lu, J., & Liu, T. (2020). MPNet: Masked and Permuted Pre-training for Language Understanding. NeurIPS 2020. https://arxiv.org/abs/2004.09297
+- Moëll, B. (2025). Swedish Health Source Triage. Hugging Face Spaces. https://huggingface.co/spaces/birgermoell/swedish-health-source-triage-demo
