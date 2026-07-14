@@ -4,9 +4,22 @@ A text classification system that maps a natural language description of a busin
 
 ---
 
+<div style="background:#f6f8fa; border-left:5px solid #f5b400; border-radius:8px; padding:16px 20px; margin:16px 0;">
+<h3 style="margin:0 0 4px 0; color:#c47f00;">💡 How to state a business issue</h3>
+<p style="margin:0 0 12px 0; color:#444;">Write 1-2 sentences the model can classify reliably:</p>
+<ol style="margin:0 0 12px 20px; padding:0; color:#333;">
+<li style="margin-bottom:6px;"><strong style="color:#2b6cb0;">Describe the data situation</strong> - what systems and data you have, and why the need is hard to meet. Don't just express frustration ("I have no idea what's happening").</li>
+<li style="margin-bottom:6px;"><strong style="color:#2b6cb0;">State the desired outcome</strong> - the concrete result or constraint you want ("one consolidated monthly report", "alerts within milliseconds").</li>
+<li style="margin-bottom:6px;"><strong style="color:#2b6cb0;">Describe the need, not the solution</strong> - don't name or negate a category; "we don't have a data warehouse" leaks the answer and confuses the model. Let it infer the label.</li>
+<li style="margin-bottom:6px;"><strong style="color:#2b6cb0;">Keep it to one issue</strong> - one problem per description, not several bundled together.</li>
+</ol>
+<p style="margin:0 0 6px 0; color:#b00020;"><strong>❌ Weak:</strong> "I have no idea what's happening with our finances. I don't see profits per category. We don't have a data warehouse."</p>
+<p style="margin:0; color:#1a7f37;"><strong>✅ Strong:</strong> "Our finance data is spread across several systems and we can't get profit broken down by product category. We need one consolidated place with monthly profit-by-category figures for management reporting."</p>
+</div>
+
 ## What It Does
 
-A business user describes a problem in plain English. The system classifies it into one of nine solution categories:
+A business user describes a problem in English. The system classifies it into one of nine solution categories:
 
 | Label | Description |
 |-------|-------------|
@@ -19,6 +32,22 @@ A business user describes a problem in plain English. The system classifies it i
 | `data_caching` | Performance optimisation through stored results |
 | `data_governance` | Data ownership, lineage and access policy |
 | `data_quality` | Data correctness, completeness and trust |
+
+## Label distribution in dataset
+
+The dataset contains 465 labeled examples across 9 solution categories (`label_it`).
+
+| Label | Count | Share |
+| --- | --- | --- |
+| `data_warehouse` | 63 | 13.5% |
+| `api_integration` | 61 | 13.1% |
+| `data_governance` | 60 | 12.9% |
+| `stream_processing` | 51 | 11.0% |
+| `etl_pipeline` | 48 | 10.3% |
+| `data_lake` | 48 | 10.3% |
+| `ml_feature_store` | 48 | 10.3% |
+| `data_caching` | 47 | 10.1% |
+| `data_quality` | 39 | 8.4% |
 
 **Example input:**
 > "We receive data from 12 regional offices every Monday and need one consolidated report for the board."
