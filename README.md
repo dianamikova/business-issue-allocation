@@ -78,7 +78,8 @@ The dataset contains 465 labeled examples across 9 solution categories (`label_i
 2. A trained SVM classifier predicts the solution category from that vector
 3. The system returns the predicted label, confidence score and top predictions
 
-The embedding model is not trained — it is used as a frozen feature extractor. Only the classifier is trained on the custom dataset.
+The embedding model is not trained - it is used as a frozen feature extractor. 
+Only the classifier is trained on the custom dataset.
 
 ---
 
